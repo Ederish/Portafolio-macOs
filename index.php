@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive macOS Style Portfolio</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+    <section>
+      <div class="icon-container">
+        <div class="icon-box about" data-modal="about">
+          <i class="fa-regular fa-address-card"></i>
+        </div>
+        <div class="icon-box projects" data-modal="projects">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="icon-box testimonial" data-modal="testimonial">
+          <i class="fa-solid fa-users-rectangle"></i>
+        </div>
+        <div class="icon-box contact" data-modal="contact">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+      </div>
+    </section>
+
+    <div class="popup" id="about">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body about-container">
+          <div class="img-frame">
+            <img
+              src="https://avatars.githubusercontent.com/u/63983547?v=4"
+              alt="" />
+          </div>
+          <div class="hero-content">
+            <h1>Ederish Herrera</h1>
+            <p>
+              Mi nombre Es Ederish Herrera, soy estudiante de ingeniería en sistemas y en estos últimos dos años 
+              he estado aprendiendo todo lo que podido de manera autodidacta sobre el mundo 
+              de la programación y el desarrollo web he Programado en diversos lenguajes
+              como JAVA, CSS, JavaScript, C# y PHP.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="projects">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="popup-body">
+          <div class="skill-list">
+            <h1>Habilidades</h1>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Javascript</li>
+              <li>Phaser game js</li>
+              <li>Java</li>
+              <li>C#</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+
+          <div class="project-container">
+            <h1>Mis Projectos</h1>
+            <div class="all-projects">
+              <div class="project-box">
+                <img
+                  src="https://repository-images.githubusercontent.com/831882082/b24fea47-516d-4435-9778-b22ab4fda83a"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Clon de Disney Plus</h3>
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="https://repository-images.githubusercontent.com/427792578/5c48ad11-f838-4835-8c8f-c0fca75c4313"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Modo Oscuro</h3>
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="https://repository-images.githubusercontent.com/664765399/d113a9aa-6cc6-4043-88c9-5e032b159264"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Portafolio</h3>
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="https://repository-images.githubusercontent.com/654770381/bfc382b6-787f-4e83-a204-c4e50fb9107d"
+                  alt="" />
+                <div class="overlay">
+                  <h3>App Movile web</h3>
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="testimonial">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body testimonial-container">
+          <h1>Creaciones</h1>
+
+          <div class="slider-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+              <?php include('slider.php'); ?>
+              </div>
+              <ul class="control" id="custom-control">
+                <li class="prev">
+                  <ion-icon class="arrow" name="caret-back-outline"></ion-icon>
+                </li>
+                <li class="next">
+                  <ion-icon
+                    class="arrow"
+                    name="caret-forward-outline"></ion-icon>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="contact">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body contact-container">
+          <h1>Contactame</h1>
+          <p>Hola, puedes contactarme por correo electrónico.</p>
+          <form method="POST" action="https://formspree.io/f/mblvkwvq">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Escribe tu nombre" />
+
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Tu correo" />
+
+            <label for="subject">Mensaje</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Enviame un mensaje"
+              style="height: 200px"></textarea>
+
+            <button class="submit-btn more-btn" type="submit">
+              <span>Enviar <i class="fa-solid fa-paper-plane"></i></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+<script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+<script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
